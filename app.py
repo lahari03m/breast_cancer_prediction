@@ -1,6 +1,6 @@
 import pickle
 import numpy as np
-import pandas as pd 
+import pandas as pd
 import streamlit as st
 from sklearn.datasets import load_breast_cancer
 
@@ -17,8 +17,12 @@ ben_avg = x[y == 1].mean(axis=0)
 mal_avg = x[y == 0].mean(axis=0)
 
 st.title("Breast Cancer Prediction")
-st.write("Enter the 30 tumor measurements and click **Predict**. "
-         "Malignant tumors usually have larger radius, perimeter, area, concavity and concave points.")
+
+st.info(
+    "**How to use:** pick a starting point, change any of the 30 values, then click **Predict**. "
+    "Malignant tumors usually have larger radius, perimeter, area, concavity and concave points "
+    "(especially the 'worst' values). Hover over the ? next to a box to see typical benign and malignant values."
+)
 
 # starting values for the input boxes
 presets = {
