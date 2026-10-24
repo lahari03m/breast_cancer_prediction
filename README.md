@@ -3,7 +3,7 @@
 A machine learning web app that predicts whether a breast tumor is **benign** or **malignant**
 from 30 cell-nucleus measurements, using the Wisconsin Diagnostic Breast Cancer dataset.
 
-**Live app:** _coming soon (add the Streamlit link after deploying)_
+**Live app:** (https://breastcancerprediction-prj201.streamlit.app/)
 
 ## Dataset
 - 569 patients (357 benign, 212 malignant)
